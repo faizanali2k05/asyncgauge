@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "asyncgauge"
+version = "0.1.0"
+description = "Concurrent async health and readiness probes with deadlines"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "Faizan Ali" }]
+keywords = ["asyncio", "health-check", "readiness", "observability"]
+classifiers = ["Development Status :: 3 - Alpha", "Intended Audience :: Developers", "License :: OSI Approved :: MIT License", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.11", "Programming Language :: Python :: 3.12", "Programming Language :: Python :: 3.13", "Typing :: Typed"]
+
+[project.urls]
+Homepage = "https://github.com/faizanali2k05/asyncgauge"
+Repository = "https://github.com/faizanali2k05/asyncgauge"
+Issues = "https://github.com/faizanali2k05/asyncgauge/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/asyncgauge"]
